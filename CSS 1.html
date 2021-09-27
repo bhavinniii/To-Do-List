@@ -8,101 +8,53 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>CSS</title>
         <style>
-
-            div.parent{ 
-                background-color: black;
-                
-                font-size: 2rem;
+            
+        div.parent {
+            display: flex;
+            align-items: stretch;
+            background-color: #111;
+            height: 100vh;
+        }
+        
+        div.child {
+            background-color: #ffbf00;
+            flex-basis: 80%;
+        }
+        
+        div.sidebar {
+            background-color: crimson;
+            flex-basis: 20%;
+        }
+        
+        @media (max-width: 550px) {
+            div.sidebar {
+                animation: 5s expand linear infinite;
             }
-            @media (min-width: 700px) {
-            div.parent {
-                background:pink;
-                font-size: 0.8rem;
+            div.child {
+                flex-basis: 100%;
             }
         }
-            @media(min-width:500px){
-                div.parent{
-                    background-color: blueviolet;
-                    color: chocolate;
-                    font-size: 0.8rem;
-                }
-            }
-           
-
-
-            
-        </style>
-        <body>
-            <div class="parent">
-            <h1>I'm a heading</h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, vel ipsam! Quos, doloribus, 
-            tempore eaque laborum non haru
-            m aut nisi ad id ipsam porro, perferendis natus praesentium.
-              Excepturi, dignissimos at?
-        </div>
-            
-        </body>
         
+        @keyframes expand {
+            0% {
+                flex-basis: 0%;
+            }
+            100% {
+                flex-basis: 50%;
+            }
+        }
+    </style>
+    <body>
+        
+    
+<div class="parent">
+    <div class="sidebar"></div>
+    <div class="child"></div>
+</div>
+</body>
+</html>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
 
 
