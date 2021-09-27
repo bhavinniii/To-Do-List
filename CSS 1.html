@@ -7,6 +7,42 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>CSS</title>
+        <style>
+
+            div.parent{ 
+                background-color: black;
+                
+                font-size: 2rem;
+            }
+            @media (min-width: 700px) {
+            div.parent {
+                background:pink;
+                font-size: 0.8rem;
+            }
+        }
+            @media(min-width:500px){
+                div.parent{
+                    background-color: blueviolet;
+                    color: chocolate;
+                    font-size: 0.8rem;
+                }
+            }
+           
+
+
+            
+        </style>
+        <body>
+            <div class="parent">
+            <h1>I'm a heading</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, vel ipsam! Quos, doloribus, 
+            tempore eaque laborum non haru
+            m aut nisi ad id ipsam porro, perferendis natus praesentium.
+              Excepturi, dignissimos at?
+        </div>
+            
+        </body>
+        
 
 
 
@@ -210,17 +246,4 @@
 
         
         
-    </style>
-</head>
-
-<body>
-    
-    <h1 class="background">Heading One</h1>
-    <h2 class="background">Heading Two</h2>
-    <h3 class="background">Heading Three</h3>
-    <h3>Heading Three</h3>
-    <span class="background">Iam a span</span>
-    
-</body>
-
-</html>
+  
