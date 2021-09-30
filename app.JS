@@ -1,17 +1,11 @@
-var heading = document.getElementById('heading')
+//function add(a = 0, b = 0) {
+   // var sum = a + b
+    //return sum
+//}
+console.log(add(10, 20))
 
-
-console.log(heading)
-
-heading.innerHTML = "i was added by JS"
-heading.style = "color:red;font-size:2rem"
-heading.classList.add("five")
-console.log(heading.classList)
-
-
-
-
- 
-
-
+var add = function (a = 0, b = 0) {
+    var sum = a + b
+    return sum
+}
 
