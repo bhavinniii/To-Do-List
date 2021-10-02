@@ -1,12 +1,16 @@
-function add(a = 0, b = 0) {
-   var sum = a + b
-    return sum
+var button = document.querySelector('button')
+var input = document.querySelector('input')
+var list = document.querySelector('ul')
+
+const callbackfunc = (event) => {
+    const inputvalue = input.value
+    const element = document.createElement('li')
+    const textnode = document.createTextNode(inputvalue)
+    element.appendChild(textnode)
+    list.appendChild(element)
 }
-console.log(add(10, 20))
+
+button.addEventListener('click',callbackfunc)
 
 
-var add = (a = 0, b = 0)=> {   //arrow function
-    var sum = a + b
-    return sum
-}
- //function expression>function declaration
+
