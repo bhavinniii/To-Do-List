@@ -118,15 +118,35 @@ input:checked + .slider:before {
 
 div.child1{
     display: flex;
-    justify-content:space-evenly;
-    background-color:ivory;
+    justify-content: center;
+    background-color: #f1f1f1;
     position: absolute;
     width:inherit;
     top: 150px;
     font-family:inherit;
-    left: 500px;
-    margin: 50px;
+    left: 360px;
+    
+    width: 43%;
+       
 }
+
+input.one
+  {width: 100%;
+  padding: 12px 20px;
+     
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: grey;
+  font-size: medium;
+  position: relative;
+  flex-grow: 2;
+}
+  span.one{
+    color: blueviolet;
+    padding: 20px;
+    flex-grow: 1;
+  }
+  
+
       
 
 
@@ -142,8 +162,8 @@ div.child1{
           </label>          
     </div>
     <div class="child1">
-       <input placeholder ="Add a task to the list..." type="text">
-        <button>Add</button>
+       <input class ="one" placeholder ="Add a task to the list..." type="text">
+        <button style="background: azure;"><span class="one">&#43;</span></button>
     </div>
        </header>
     <footer>
